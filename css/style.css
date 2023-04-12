@@ -1,0 +1,36 @@
+*{
+    pad: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(../img/foto-capa-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    
+}
+
+h1{
+
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+footer{
+    height: 50px;
+    background-color: rgb(10, 10, 10);
+}
+footer p{
+    font-weight: 300;
+    color: white;
+    padding: 15px;
+font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+}
