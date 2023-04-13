@@ -1,36 +1,145 @@
-*{
+* {
     pad: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-header{
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(253, 200, 120, 0.733);
+
+}
+
+nav img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+
+
+}
+
+nav ul#menu-desktop {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul#menu-desktop li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul#menu-desktop li a {
+    padding: 30px 40px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: -3px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.6;
+}
+
+nav ul#menu-desktop li a:hover {
+    background-color: #b69058bb;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
     background-image: url(../img/foto-capa-pizza.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
     width: 100%;
-    
 }
 
-h1{
-
+h1 {
+    padding: 25%;
     color: rgb(255, 255, 255);
     font-weight: 600;
     text-align: center;
     font-size: 60px;
     font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 5px 5px 8px #000;
 }
 
-footer{
-    height: 50px;
-    background-color: rgb(10, 10, 10);
+#apresentacao {
+    width: 90%;
+    display: block;
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 100px auto;
 }
-footer p{
-    font-weight: 300;
+
+.pizza {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 30%;
+    float: left;
+    background-color: white;
+    box-shadow: 0 0 10px #666;
+    border-radius: 5px;
+}
+
+.pizza img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pizza h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.pizza p {
+    text-align: center;
+    padding: 5%;
+    margin-top: 1%;
+    color: #666;
+    font-size: 90%;
+}
+
+.pizza a {
+    display: block;
+    text-align: center;
+    background-color: forestgreen;
     color: white;
+    padding: 3%;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.direita{
+    float: right;
+}
+.centro{
+    margin-left: 5%;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    display: block;
+    height: 50px;
+    background-color: rgb(20, 20, 20);
+}
+
+footer p {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
     padding: 15px;
-font-size: 16px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-text-align: center;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
